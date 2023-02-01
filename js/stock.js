@@ -41,5 +41,3 @@ stock.push(
     "assets/img/PC GAMA ALTA.jpg"
   )
 );
-
-console.log(stock);

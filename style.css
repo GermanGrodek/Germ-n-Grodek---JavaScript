@@ -168,21 +168,26 @@ flex-wrap: wrap;
     cursor: pointer;
   }
 
+  .modal__card {
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: rgb(168, 168, 168) 1px solid;
+  }
+  
   .modal__card img {
     height: 200px;
   }
 
-  .modal__card {
-    height: 200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border: rgb(168, 168, 168) 1px solid;
-  }
-
-  .modal__card h3, .modal__card p {
+  .modal__card h3, .modal__card p, .btnEliminarProducto {
     margin: auto;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+  }
+
+  .btnEliminarProducto {
+    color: red;
+    cursor: pointer;
   }
 
   .modal__footer {
@@ -201,6 +206,7 @@ flex-wrap: wrap;
     font-size: 25px;
     color: white;
     background-color: black;
+    cursor: pointer;
   }
 
 @media only screen and (max-width: 500px) {
