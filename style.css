@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Share+Tech+Mono&display=swap');
 
+.swal2-title {
+  font-family: 'Inter', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +19,7 @@
 .headerTech {
     display: flex;
     justify-content: space-around;
+    background-color: #303131;
 }
 
 #btnCarrito {
@@ -23,6 +28,7 @@
 }
 
 #titulo {
+  padding: 10px;
     font-family: 'Share Tech', sans-serif;
     letter-spacing: 0.5em;
     color: red;
@@ -32,11 +38,23 @@
     justify-content: center;  
 }
 
+nav {
+  margin-top: 1em;
+}
+
+nav a{
+  font-family: 'Share Tech', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  margin: 40px;
+}
+
 /* TIENDA DE PRODUCTOS */
 
 #cardSection {
 display: flex;
-justify-content: space-around;
+justify-content: space-evenly;
 flex-wrap: wrap;
 }
 
@@ -84,7 +102,7 @@ flex-wrap: wrap;
     width: 100%;
   }
 
-  #btnCarrito {
+  #btnCarrito{
     margin: auto 0;
     padding: 5px;
     height: 35px;
@@ -207,6 +225,50 @@ flex-wrap: wrap;
     color: white;
     background-color: black;
     cursor: pointer;
+  }
+
+  /* Galería de imagenes */
+
+  .conteinerGaleria {
+    display: grid;
+    justify-content: center;
+  }
+
+  .galeriaTitulo {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .getImagesButton {
+    display: flex;
+    margin: 10px 30px;
+    padding: 5px;
+    height: 35px;
+    background-color: #1899D6;
+    border: 0.5px solid rgb(204, 201, 201);
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 20px;
+    letter-spacing: .8px;
+    line-height: 20px;
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateZ(0);
+    transition: filter .2s;
+  }
+
+  .imageDisplayWrapper{
+    margin-top: 25px;
+  }
+  
+  .imageToDisplay {
+    height: 720px;
+    border: 1px solid black;
   }
 
 @media only screen and (max-width: 500px) {

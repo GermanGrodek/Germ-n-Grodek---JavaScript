@@ -30,6 +30,13 @@ stock.forEach((prod) => {
         img: prod.img,
       });
       saveCarrito();
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: `${prod.nombre} fue agregado al carrito`,
+        showConfirmButton: false,
+        timer: 1500
+      })
     });
   });
   
